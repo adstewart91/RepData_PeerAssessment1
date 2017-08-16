@@ -89,7 +89,7 @@ print(xt, type = "html")
 ```
 
 <!-- html table generated in R 3.4.0 by xtable 1.8-2 package -->
-<!-- Tue Aug 15 22:26:14 2017 -->
+<!-- Tue Aug 15 22:28:01 2017 -->
 <table border=1>
 <tr> <th>  </th> <th> date </th> <th> meanSteps </th> <th> medianSteps </th>  </tr>
   <tr> <td align="right"> 1 </td> <td> 2012-10-01 </td> <td align="right">  </td> <td align="right">  </td> </tr>
@@ -175,6 +175,12 @@ h + labs(title = "Average Steps Per Interval", x = "5 Second Interval", y =
 ![](PA1_template_files/figure-html/Avg.daily.acty.pattern-1.png)<!-- -->
 
 ```r
+plot(h)
+```
+
+![](PA1_template_files/figure-html/Avg.daily.acty.pattern-2.png)<!-- -->
+
+```r
 ## Arrange intervals by highest to lowest periods of meanSteps
 mostActive <- arrange(intervalData, desc(meanSteps))
 
@@ -185,7 +191,7 @@ print(xt, type = "html")
 ```
 
 <!-- html table generated in R 3.4.0 by xtable 1.8-2 package -->
-<!-- Tue Aug 15 22:26:15 2017 -->
+<!-- Tue Aug 15 22:28:02 2017 -->
 <table border=1>
 <tr> <th>  </th> <th> interval </th> <th> meanSteps </th>  </tr>
   <tr> <td align="right"> 1 </td> <td align="right"> 835 </td> <td align="right"> 206.17 </td> </tr>
@@ -224,7 +230,7 @@ print(xt, type = "html")
 ```
 
 <!-- html table generated in R 3.4.0 by xtable 1.8-2 package -->
-<!-- Tue Aug 15 22:26:15 2017 -->
+<!-- Tue Aug 15 22:28:03 2017 -->
 <table border=1>
 <tr> <th>  </th> <th>   steps </th> <th>    date </th> <th>  interval </th>  </tr>
   <tr> <td align="right"> 1 </td> <td> Mode :logical   </td> <td> Mode :logical   </td> <td> Mode :logical   </td> </tr>
@@ -280,7 +286,7 @@ print(xt, type = "html")
 ```
 
 <!-- html table generated in R 3.4.0 by xtable 1.8-2 package -->
-<!-- Tue Aug 15 22:26:16 2017 -->
+<!-- Tue Aug 15 22:28:03 2017 -->
 <table border=1>
 <tr> <th>  </th> <th> date </th> <th> new.Mean.Steps </th> <th> new.Median.Steps </th>  </tr>
   <tr> <td align="right"> 1 </td> <td> 2012-10-01 </td> <td align="right"> 37.38 </td> <td align="right"> 34.11 </td> </tr>
@@ -364,7 +370,7 @@ print(xt, type = "html")
 ```
 
 <!-- html table generated in R 3.4.0 by xtable 1.8-2 package -->
-<!-- Tue Aug 15 22:26:16 2017 -->
+<!-- Tue Aug 15 22:28:03 2017 -->
 <table border=1>
 <tr> <th>  </th> <th> date </th> <th> meanSteps </th> <th> new.Mean.Steps </th> <th> medianSteps </th> <th> new.Median.Steps </th>  </tr>
   <tr> <td align="right"> 1 </td> <td> 2012-10-01 </td> <td align="right">  </td> <td align="right"> 37.38 </td> <td align="right">  </td> <td align="right"> 34.11 </td> </tr>
@@ -452,7 +458,7 @@ print(xt, type ="html")
 ```
 
 <!-- html table generated in R 3.4.0 by xtable 1.8-2 package -->
-<!-- Tue Aug 15 22:26:16 2017 -->
+<!-- Tue Aug 15 22:28:03 2017 -->
 <table border=1>
 <tr> <th>  </th> <th> mean </th> <th> median </th>  </tr>
   <tr> <td align="right"> 1st Summary </td> <td align="right"> 37.38 </td> <td align="right"> 0.00 </td> </tr>
@@ -487,7 +493,7 @@ print(xt, type = "html")
 ```
 
 <!-- html table generated in R 3.4.0 by xtable 1.8-2 package -->
-<!-- Tue Aug 15 22:26:16 2017 -->
+<!-- Tue Aug 15 22:28:03 2017 -->
 <table border=1>
 <tr> <th>  </th> <th> dayCatagory </th> <th> meanSteps </th> <th> medianSteps </th>  </tr>
   <tr> <td align="right"> 1 </td> <td> Weekday </td> <td align="right"> 35.61 </td> <td align="right"> 0.00 </td> </tr>
