@@ -93,7 +93,12 @@ g + geom_histogram(binwidth = 1, color="yellow") +
 
 ```r
         ## binwidth is each day
+plot(g)
+```
 
+![](PA1_template_files/figure-html/Steps.per.day-2.png)<!-- -->
+
+```r
 summaryData <- actyData %>% group_by(date) %>% summarise(meanSteps = mean(steps, 
         na.rm=TRUE),medianSteps = median(steps, na.rm=TRUE))
 
@@ -104,7 +109,7 @@ print(xt, type = "html")
 ```
 
 <!-- html table generated in R 3.4.0 by xtable 1.8-2 package -->
-<!-- Tue Aug 15 22:45:12 2017 -->
+<!-- Tue Aug 15 22:48:18 2017 -->
 <table border=1>
 <tr> <th>  </th> <th> date </th> <th> meanSteps </th> <th> medianSteps </th>  </tr>
   <tr> <td align="right"> 1 </td> <td> 2012-10-01 </td> <td align="right">  </td> <td align="right">  </td> </tr>
@@ -206,7 +211,7 @@ print(xt, type = "html")
 ```
 
 <!-- html table generated in R 3.4.0 by xtable 1.8-2 package -->
-<!-- Tue Aug 15 22:45:13 2017 -->
+<!-- Tue Aug 15 22:48:19 2017 -->
 <table border=1>
 <tr> <th>  </th> <th> interval </th> <th> meanSteps </th>  </tr>
   <tr> <td align="right"> 1 </td> <td align="right"> 835 </td> <td align="right"> 206.17 </td> </tr>
@@ -245,7 +250,7 @@ print(xt, type = "html")
 ```
 
 <!-- html table generated in R 3.4.0 by xtable 1.8-2 package -->
-<!-- Tue Aug 15 22:45:13 2017 -->
+<!-- Tue Aug 15 22:48:20 2017 -->
 <table border=1>
 <tr> <th>  </th> <th>   steps </th> <th>    date </th> <th>  interval </th>  </tr>
   <tr> <td align="right"> 1 </td> <td> Mode :logical   </td> <td> Mode :logical   </td> <td> Mode :logical   </td> </tr>
@@ -289,7 +294,12 @@ t + geom_histogram(binwidth = 1, color="yellow") +
 
 ```r
                 ## binwidth is each day
+plot(t)
+```
 
+![](PA1_template_files/figure-html/Impute.missing.values-2.png)<!-- -->
+
+```r
 ## Compare new and previous summaries :
 newSummaryData <- modActyData %>% group_by(date) %>% summarise(new.Mean.Steps = 
         mean(steps, na.rm=TRUE),new.Median.Steps = median(steps, na.rm=TRUE))
@@ -301,7 +311,7 @@ print(xt, type = "html")
 ```
 
 <!-- html table generated in R 3.4.0 by xtable 1.8-2 package -->
-<!-- Tue Aug 15 22:45:14 2017 -->
+<!-- Tue Aug 15 22:48:20 2017 -->
 <table border=1>
 <tr> <th>  </th> <th> date </th> <th> new.Mean.Steps </th> <th> new.Median.Steps </th>  </tr>
   <tr> <td align="right"> 1 </td> <td> 2012-10-01 </td> <td align="right"> 37.38 </td> <td align="right"> 34.11 </td> </tr>
@@ -385,7 +395,7 @@ print(xt, type = "html")
 ```
 
 <!-- html table generated in R 3.4.0 by xtable 1.8-2 package -->
-<!-- Tue Aug 15 22:45:14 2017 -->
+<!-- Tue Aug 15 22:48:20 2017 -->
 <table border=1>
 <tr> <th>  </th> <th> date </th> <th> meanSteps </th> <th> new.Mean.Steps </th> <th> medianSteps </th> <th> new.Median.Steps </th>  </tr>
   <tr> <td align="right"> 1 </td> <td> 2012-10-01 </td> <td align="right">  </td> <td align="right"> 37.38 </td> <td align="right">  </td> <td align="right"> 34.11 </td> </tr>
@@ -473,7 +483,7 @@ print(xt, type ="html")
 ```
 
 <!-- html table generated in R 3.4.0 by xtable 1.8-2 package -->
-<!-- Tue Aug 15 22:45:14 2017 -->
+<!-- Tue Aug 15 22:48:20 2017 -->
 <table border=1>
 <tr> <th>  </th> <th> mean </th> <th> median </th>  </tr>
   <tr> <td align="right"> 1st Summary </td> <td align="right"> 37.38 </td> <td align="right"> 0.00 </td> </tr>
@@ -508,7 +518,7 @@ print(xt, type = "html")
 ```
 
 <!-- html table generated in R 3.4.0 by xtable 1.8-2 package -->
-<!-- Tue Aug 15 22:45:14 2017 -->
+<!-- Tue Aug 15 22:48:20 2017 -->
 <table border=1>
 <tr> <th>  </th> <th> dayCatagory </th> <th> meanSteps </th> <th> medianSteps </th>  </tr>
   <tr> <td align="right"> 1 </td> <td> Weekday </td> <td align="right"> 35.61 </td> <td align="right"> 0.00 </td> </tr>
@@ -527,6 +537,12 @@ w + labs(title = "Mean Steps per Interval by Week Day Type", y = "Mean Steps")
 ```
 
 ![](PA1_template_files/figure-html/Acty.weekend.weekday-1.png)<!-- -->
+
+```r
+plot(w)
+```
+
+![](PA1_template_files/figure-html/Acty.weekend.weekday-2.png)<!-- -->
 
 
 
