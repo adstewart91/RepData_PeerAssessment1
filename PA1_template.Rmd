@@ -3,11 +3,12 @@ Author: "Andrew D. Stewart"
 title: "Reproducible Research: Peer Assessment 1"
 output: 
   html_document:
-    keep_md: true
+    fig_caption: yes
+    keep_md: yes
 ---
 
 ## Load Libraries
-```{r libraries, echo = FALSE, results="hide"}
+```{r libraries, echo = FALSE}
 
 library(data.table)
 library(dplyr)

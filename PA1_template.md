@@ -89,7 +89,7 @@ print(xt, type = "html")
 ```
 
 <!-- html table generated in R 3.4.0 by xtable 1.8-2 package -->
-<!-- Mon Aug 14 19:51:08 2017 -->
+<!-- Tue Aug 15 22:14:17 2017 -->
 <table border=1>
 <tr> <th>  </th> <th> date </th> <th> meanSteps </th> <th> medianSteps </th>  </tr>
   <tr> <td align="right"> 1 </td> <td> 2012-10-01 </td> <td align="right">  </td> <td align="right">  </td> </tr>
@@ -185,7 +185,7 @@ print(xt, type = "html")
 ```
 
 <!-- html table generated in R 3.4.0 by xtable 1.8-2 package -->
-<!-- Mon Aug 14 19:51:09 2017 -->
+<!-- Tue Aug 15 22:14:18 2017 -->
 <table border=1>
 <tr> <th>  </th> <th> interval </th> <th> meanSteps </th>  </tr>
   <tr> <td align="right"> 1 </td> <td align="right"> 835 </td> <td align="right"> 206.17 </td> </tr>
@@ -224,7 +224,7 @@ print(xt, type = "html")
 ```
 
 <!-- html table generated in R 3.4.0 by xtable 1.8-2 package -->
-<!-- Mon Aug 14 19:51:09 2017 -->
+<!-- Tue Aug 15 22:14:18 2017 -->
 <table border=1>
 <tr> <th>  </th> <th>   steps </th> <th>    date </th> <th>  interval </th>  </tr>
   <tr> <td align="right"> 1 </td> <td> Mode :logical   </td> <td> Mode :logical   </td> <td> Mode :logical   </td> </tr>
@@ -280,7 +280,7 @@ print(xt, type = "html")
 ```
 
 <!-- html table generated in R 3.4.0 by xtable 1.8-2 package -->
-<!-- Mon Aug 14 19:51:10 2017 -->
+<!-- Tue Aug 15 22:14:19 2017 -->
 <table border=1>
 <tr> <th>  </th> <th> date </th> <th> new.Mean.Steps </th> <th> new.Median.Steps </th>  </tr>
   <tr> <td align="right"> 1 </td> <td> 2012-10-01 </td> <td align="right"> 37.38 </td> <td align="right"> 34.11 </td> </tr>
@@ -364,7 +364,7 @@ print(xt, type = "html")
 ```
 
 <!-- html table generated in R 3.4.0 by xtable 1.8-2 package -->
-<!-- Mon Aug 14 19:51:10 2017 -->
+<!-- Tue Aug 15 22:14:19 2017 -->
 <table border=1>
 <tr> <th>  </th> <th> date </th> <th> meanSteps </th> <th> new.Mean.Steps </th> <th> medianSteps </th> <th> new.Median.Steps </th>  </tr>
   <tr> <td align="right"> 1 </td> <td> 2012-10-01 </td> <td align="right">  </td> <td align="right"> 37.38 </td> <td align="right">  </td> <td align="right"> 34.11 </td> </tr>
@@ -452,7 +452,7 @@ print(xt, type ="html")
 ```
 
 <!-- html table generated in R 3.4.0 by xtable 1.8-2 package -->
-<!-- Mon Aug 14 19:51:10 2017 -->
+<!-- Tue Aug 15 22:14:19 2017 -->
 <table border=1>
 <tr> <th>  </th> <th> mean </th> <th> median </th>  </tr>
   <tr> <td align="right"> 1st Summary </td> <td align="right"> 37.38 </td> <td align="right"> 0.00 </td> </tr>
@@ -487,7 +487,7 @@ print(xt, type = "html")
 ```
 
 <!-- html table generated in R 3.4.0 by xtable 1.8-2 package -->
-<!-- Mon Aug 14 19:51:10 2017 -->
+<!-- Tue Aug 15 22:14:19 2017 -->
 <table border=1>
 <tr> <th>  </th> <th> dayCatagory </th> <th> meanSteps </th> <th> medianSteps </th>  </tr>
   <tr> <td align="right"> 1 </td> <td> Weekday </td> <td align="right"> 35.61 </td> <td align="right"> 0.00 </td> </tr>
