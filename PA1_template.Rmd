@@ -24,7 +24,7 @@ library(xtable)
 ## Loading and preprocessing the data
 
 ```{r Load Data}
-knitr::opts_chunk$set(fig.width=12, fig.height=8, fig.path='Figs/', echo = TRUE, 
+knitr::opts_chunk$set(fig.width=12, fig.height=8, fig.path='', echo = TRUE, 
                      fig.keep = "all", results = "asis")
 
 ## Read activity.csv, set column classes, and format as tbl_df

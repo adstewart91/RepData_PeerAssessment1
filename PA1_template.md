@@ -63,7 +63,7 @@ library(xtable)
 
 
 ```r
-knitr::opts_chunk$set(fig.width=12, fig.height=8, fig.path='Figs/', echo = TRUE, 
+knitr::opts_chunk$set(fig.width=12, fig.height=8, fig.path='', echo = TRUE, 
                      fig.keep = "all", results = "asis")
 
 ## Read activity.csv, set column classes, and format as tbl_df
@@ -90,7 +90,7 @@ g + geom_histogram(binwidth = 1, color="yellow") +
         labs(title = "Sum of Steps Per Day", y = "Steps")
 ```
 
-![](Figs/Steps.per.day-1.png)<!-- -->
+![](Steps.per.day-1.png)<!-- -->
 
 ```r
         ## binwidth is each day
@@ -106,7 +106,7 @@ print(xt, type = "html")
 ```
 
 <!-- html table generated in R 3.4.0 by xtable 1.8-2 package -->
-<!-- Tue Aug 15 22:56:02 2017 -->
+<!-- Tue Aug 15 22:59:43 2017 -->
 <table border=1>
 <tr> <th>  </th> <th> date </th> <th> meanSteps </th> <th> medianSteps </th>  </tr>
   <tr> <td align="right"> 1 </td> <td> 2012-10-01 </td> <td align="right">  </td> <td align="right">  </td> </tr>
@@ -189,7 +189,7 @@ h + labs(title = "Average Steps Per Interval", x = "5 Second Interval", y =
                  "Averge Number of Steps")
 ```
 
-![](Figs/Avg.daily.acty.pattern-1.png)<!-- -->
+![](Avg.daily.acty.pattern-1.png)<!-- -->
 
 ```r
 ## Arrange intervals by highest to lowest periods of meanSteps
@@ -202,7 +202,7 @@ print(xt, type = "html")
 ```
 
 <!-- html table generated in R 3.4.0 by xtable 1.8-2 package -->
-<!-- Tue Aug 15 22:56:03 2017 -->
+<!-- Tue Aug 15 22:59:44 2017 -->
 <table border=1>
 <tr> <th>  </th> <th> interval </th> <th> meanSteps </th>  </tr>
   <tr> <td align="right"> 1 </td> <td align="right"> 835 </td> <td align="right"> 206.17 </td> </tr>
@@ -241,7 +241,7 @@ print(xt, type = "html")
 ```
 
 <!-- html table generated in R 3.4.0 by xtable 1.8-2 package -->
-<!-- Tue Aug 15 22:56:03 2017 -->
+<!-- Tue Aug 15 22:59:44 2017 -->
 <table border=1>
 <tr> <th>  </th> <th>   steps </th> <th>    date </th> <th>  interval </th>  </tr>
   <tr> <td align="right"> 1 </td> <td> Mode :logical   </td> <td> Mode :logical   </td> <td> Mode :logical   </td> </tr>
@@ -281,7 +281,7 @@ t + geom_histogram(binwidth = 1, color="yellow") +
              y = "Steps") 
 ```
 
-![](Figs/Impute.missing.values-1.png)<!-- -->
+![](Impute.missing.values-1.png)<!-- -->
 
 ```r
                 ## binwidth is each day
@@ -297,7 +297,7 @@ print(xt, type = "html")
 ```
 
 <!-- html table generated in R 3.4.0 by xtable 1.8-2 package -->
-<!-- Tue Aug 15 22:56:04 2017 -->
+<!-- Tue Aug 15 22:59:44 2017 -->
 <table border=1>
 <tr> <th>  </th> <th> date </th> <th> new.Mean.Steps </th> <th> new.Median.Steps </th>  </tr>
   <tr> <td align="right"> 1 </td> <td> 2012-10-01 </td> <td align="right"> 37.38 </td> <td align="right"> 34.11 </td> </tr>
@@ -381,7 +381,7 @@ print(xt, type = "html")
 ```
 
 <!-- html table generated in R 3.4.0 by xtable 1.8-2 package -->
-<!-- Tue Aug 15 22:56:04 2017 -->
+<!-- Tue Aug 15 22:59:44 2017 -->
 <table border=1>
 <tr> <th>  </th> <th> date </th> <th> meanSteps </th> <th> new.Mean.Steps </th> <th> medianSteps </th> <th> new.Median.Steps </th>  </tr>
   <tr> <td align="right"> 1 </td> <td> 2012-10-01 </td> <td align="right">  </td> <td align="right"> 37.38 </td> <td align="right">  </td> <td align="right"> 34.11 </td> </tr>
@@ -469,7 +469,7 @@ print(xt, type ="html")
 ```
 
 <!-- html table generated in R 3.4.0 by xtable 1.8-2 package -->
-<!-- Tue Aug 15 22:56:04 2017 -->
+<!-- Tue Aug 15 22:59:44 2017 -->
 <table border=1>
 <tr> <th>  </th> <th> mean </th> <th> median </th>  </tr>
   <tr> <td align="right"> 1st Summary </td> <td align="right"> 37.38 </td> <td align="right"> 0.00 </td> </tr>
@@ -504,7 +504,7 @@ print(xt, type = "html")
 ```
 
 <!-- html table generated in R 3.4.0 by xtable 1.8-2 package -->
-<!-- Tue Aug 15 22:56:04 2017 -->
+<!-- Tue Aug 15 22:59:44 2017 -->
 <table border=1>
 <tr> <th>  </th> <th> dayCatagory </th> <th> meanSteps </th> <th> medianSteps </th>  </tr>
   <tr> <td align="right"> 1 </td> <td> Weekday </td> <td align="right"> 35.61 </td> <td align="right"> 0.00 </td> </tr>
@@ -522,7 +522,7 @@ w <- qplot(interval, meanSteps, data = daysIntervalData, facets = dayCatagory ~.
 w + labs(title = "Mean Steps per Interval by Week Day Type", y = "Mean Steps")
 ```
 
-![](Figs/Acty.weekend.weekday-1.png)<!-- -->
+![](Acty.weekend.weekday-1.png)<!-- -->
 
 
 
