@@ -1,14 +1,15 @@
 ---
 Author: "Andrew D. Stewart"
 title: "Reproducible Research: Peer Assessment 1"
-output: 
+output:
   html_document:
     fig_caption: yes
     keep_md: yes
+
 ---
 
 ## Load Libraries
-```{r libraries, echo = FALSE}
+```{r libraries}
 
 library(data.table)
 library(dplyr)
@@ -23,7 +24,8 @@ library(xtable)
 ## Loading and preprocessing the data
 
 ```{r Load Data}
-knitr::opts_chunk$set(echo = TRUE, results = "asis")
+knitr::opts_chunk$set(fig.width=12, fig.height=8, fig.path='Figs/', echo = TRUE, 
+                     fig.keep = "all", results = "asis")
 
 ## Read activity.csv, set column classes, and format as tbl_df
 actyData <- read.csv("activity.csv", header = TRUE, colClasses = c("integer", "Date", 
@@ -48,6 +50,7 @@ g <- ggplot(stepsPerDay, aes(date, weight = dailySteps))
 g + geom_histogram(binwidth = 1, color="yellow") +
         labs(title = "Sum of Steps Per Day", y = "Steps")
         ## binwidth is each day
+
 
 summaryData <- actyData %>% group_by(date) %>% summarise(meanSteps = mean(steps, 
         na.rm=TRUE),medianSteps = median(steps, na.rm=TRUE))
@@ -75,6 +78,7 @@ intervalData <- actyData %>% group_by(interval) %>% summarise(meanSteps = mean(s
 h <- qplot(x =interval, y =meanSteps, data=intervalData, geom = "line")
 h + labs(title = "Average Steps Per Interval", x = "5 Second Interval", y = 
                  "Averge Number of Steps")
+
 
 ## Arrange intervals by highest to lowest periods of meanSteps
 mostActive <- arrange(intervalData, desc(meanSteps))
@@ -226,6 +230,7 @@ daysIntervalData <- daysModActyData %>% group_by(interval, dayCatagory) %>%
 w <- qplot(interval, meanSteps, data = daysIntervalData, facets = dayCatagory ~., 
            geom = "line")
 w + labs(title = "Mean Steps per Interval by Week Day Type", y = "Mean Steps")
+
 
 
 
